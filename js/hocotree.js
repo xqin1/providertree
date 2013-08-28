@@ -1,21 +1,25 @@
 var treedata = {};
 var hocoParas,stateParas;
 var hocodata, hocokey;
+var  dbaToolTip = CustomTooltip("dba_tooltip", 200);
+var popFormat = d3.format(",.1s");
 
 var paras=window.location.href.split("?");
 //console.log(paras);
-if (paras.length==1){
+if (paras.length==0){
 	alert("No HOCO or STATE selected");
 }
 else{
-	var selects = paras[1].split("&");
-	hocoParas=decodeURI(selects[0].split("=")[1]);//HOCO name
-	stateParas=selects[1].split("=")[1];//state fips
+  var para = paras[1].split("/");
+	hocoParas=decodeURI(para[1]);//HOCO name
+	stateParas=decodeURI(para[3]);;//state fips
 }
 
 var margin = {top: 20, right: 120, bottom: 20, left: 260},
-    width = 960 - margin.right - margin.left,
-    height = 800 - margin.top - margin.bottom;
+    width = parseInt(d3.select('#treeGraph').style('width')),
+    width = width - margin.right - margin.left,
+    mapRatio = 0.9
+    height = width*mapRatio - margin.top - margin.bottom;
     
 var i = 0,
     duration = 750,
@@ -94,7 +98,7 @@ function ready(error, hoco){
 	      d._children.forEach(collapse);
 	      d.children = null;
 	    }
-  	  }
+  	 }
 
   	//root.children.forEach(collapse);
   	update(treedata);
@@ -116,9 +120,12 @@ function update(source) {
 
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
-      .attr("class", "node")
+      //.attr("class", "node")
+      .attr("class", function(d){return d.depth==0 ? "node root" : "node"})
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-      .on("click", click);
+      .on("click", click)
+      .on("mouseover", mouseover )
+      .on("mouseout", mouseout);
 
   nodeEnter.append("circle")
       .attr("r", 1e-6)
@@ -129,7 +136,7 @@ function update(source) {
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -141,7 +148,8 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
-      .style("fill-opacity", 1);
+      .style("fill-opacity", 1)
+
 
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
@@ -198,6 +206,27 @@ function click(d) {
     d._children = null;
   }
   update(d);
+}
+
+function mouseover(d){
+  if (d.depth == 2){
+    console.log (d);
+    var content = "";
+    content += "<span class='title'>DBA: </span><span class='title'>" + d.name + "</span></br>";
+    content += "<span class='name'>Population Served: </span><span class='value'>" + popFormat(d.Pop_Served) + "</span></br>";
+    content += "<span class='name'>State Served: </span><span class='value'>" + d.StateFIPS.join(' ') + "</span>";
+    // content += "<span class='name'>Action: </span><span class='value'>" + d.action + "</span>";
+    // content += "<span class='separator'>&nbsp;|&nbsp;</span>";
+    // content += "<span class='name'>Cost: </span><span class='value'>" + formatMoney(d.result_payment) + "</span>";
+    dbaToolTip.showTooltip(content,d3.event);
+  }
+}
+
+function mouseout(d){
+  if (d.depth ==2){
+    console.log('mouseout');
+    dbaToolTip.hideTooltip();
+  }
 }
 
 
