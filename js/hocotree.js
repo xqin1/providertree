@@ -15,7 +15,7 @@ else{
 	stateParas=decodeURI(para[3]);;//state fips
 }
 
-var margin = {top: 20, right: 120, bottom: 20, left: 260},
+var margin = {top: 20, right: 120, bottom: 20, left: 280},
     width = parseInt(d3.select('#treeGraph').style('width')),
     width = width - margin.right - margin.left,
     mapRatio = 0.9
@@ -34,8 +34,18 @@ var diagonal = d3.svg.diagonal()
 var svg = d3.select("#treeGraph").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .append("g")
+      .attr("id", "layout")
+     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.append("svg:clipPath").attr("id", "clipper")
+        .append("svg:rect")
+        .attr('id', 'clip-rect');
+
+    var animGroup = d3.select("#layout").append("svg:g")
+        .attr("id", "animation")
+        .attr("clip-path", "url(#clipper)");
+
 
 queue()
 	.defer(d3.csv, "data/hocodata.csv")
@@ -92,13 +102,13 @@ function ready(error, hoco){
 	  treedata.x0 = height / 2;
 	  treedata.y0 = 0;
 
-	  function collapse(d) {
-	    if (d.children) {
-	      d._children = d.children;
-	      d._children.forEach(collapse);
-	      d.children = null;
-	    }
-  	 }
+	  // function collapse(d) {
+	  //   if (d.children) {
+	  //     d._children = d.children;
+	  //     d._children.forEach(collapse);
+	  //     d.children = null;
+	  //   }
+  	//  }
 
   	//root.children.forEach(collapse);
   	update(treedata);
@@ -219,6 +229,53 @@ function mouseover(d){
     // content += "<span class='separator'>&nbsp;|&nbsp;</span>";
     // content += "<span class='name'>Cost: </span><span class='value'>" + formatMoney(d.result_payment) + "</span>";
     dbaToolTip.showTooltip(content,d3.event);
+
+    var ancestors = [];
+    var parent = d;
+    while (typeof parent != "undefined") {
+        ancestors.push(parent);
+        parent = parent.parent;
+    }
+
+    // Get the matched links
+   var matchedLinks=[]
+    svg.selectAll('path.link').filter(function(d){
+         ancestors.forEach(function(p){
+            if (p === d.target){
+                matchedLinks.push(d)
+            }
+        })
+    })
+
+     var linkRenderer = d3.svg.diagonal()
+        .projection(function(d)
+        {
+            return [d.y, d.x];
+        });
+
+    // Links
+    // ui.animGroup.selectAll("path.selected")
+    //     .data([])
+    //     .exit().remove();
+
+    d3.select("#animation")
+        .selectAll("path.selected")
+        .data(matchedLinks)
+        .enter().append("svg:path")
+        .attr("class", "selected")
+        .attr("d", linkRenderer);
+
+    // Animate the clipping path
+    var overlayBox = svg.node().getBBox();
+
+    svg.select("#clip-rect")
+        .attr("x", overlayBox.x + overlayBox.width)
+        .attr("y", overlayBox.y)
+        .attr("width", 0)
+        .attr("height", overlayBox.height)
+        .transition().duration(1000)
+        .attr("x", overlayBox.x)
+        .attr("width", overlayBox.width);
   }
 }
 
@@ -226,6 +283,11 @@ function mouseout(d){
   if (d.depth ==2){
     console.log('mouseout');
     dbaToolTip.hideTooltip();
+
+    // Links
+    svg.select('#animation').selectAll("path.selected")
+        .data([])
+        .exit().remove();
   }
 }
 
