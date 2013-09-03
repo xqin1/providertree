@@ -60,9 +60,9 @@ function ready(error, hoco){
 		hocodata = hoco.filter(function(d){return d.HoCoName == hocoParas && d.StateFIPS == stateParas});
 	}
 	hocodata.forEach(function(d){
-		d.HoCoName = d.HoCoName.toUpperCase();
-		d.ProvName = d.ProvName.toUpperCase();
-		d.DBAName = d.DBAName.toUpperCase();
+		d.HoCoName = d.HoCoName.toUpperCase().toProperCase();
+		d.ProvName = d.ProvName.toUpperCase().toProperCase();
+		d.DBAName = d.DBAName.toUpperCase().toProperCase();
 		d.Pop_Served = +d.Pop_Served;
 	});
 
@@ -290,5 +290,14 @@ function mouseout(d){
         .exit().remove();
   }
 }
+
+String.prototype.toProperCase = function() {
+    var aStr = this.split(' ');
+    var aProp = [];
+    for (str in aStr) {
+        aProp.push(aStr[str].charAt(0).toUpperCase() + aStr[str].slice(1).toLowerCase());
+    }
+    return aProp.join(' ');
+};
 
 
