@@ -60,9 +60,9 @@ function ready(error, hoco){
 		hocodata = hoco.filter(function(d){return d.HoCoName == hocoParas && d.StateFIPS == stateParas});
 	}
 	hocodata.forEach(function(d){
-		d.HoCoName = d.HoCoName.toUpperCase().toProperCase();
-		d.ProvName = d.ProvName.toUpperCase().toProperCase();
-		d.DBAName = d.DBAName.toUpperCase().toProperCase();
+		d.HoCoName = d.HoCoName;//.toUpperCase().toProperCase();
+		d.ProvName = d.ProvName;//.toUpperCase().toProperCase();
+		d.DBAName = d.DBAName;//.toUpperCase().toProperCase();
 		d.Pop_Served = +d.Pop_Served;
 	});
 
