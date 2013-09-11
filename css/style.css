@@ -25,12 +25,24 @@ path.link {
   stroke-width: 1.5px;
 }
 
+path.link.selected {
+  fill: none;
+  stroke: green;
+  stroke-width: 1.5px;
+}
+
+path.selectedState {
+  fill: none;
+  stroke: green;
+  stroke-width: 1.5px;
+}
+
 path.selected {
     stroke: green;
     fill: none;
     stroke-width: 4px;
 }
-.treeGraph {width:960px;}
+.treeGraph {width:1060px;}
 
 /* =============================================================================
    Tooltip
