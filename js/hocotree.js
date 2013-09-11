@@ -287,6 +287,7 @@ function mouseover(d){
    d.StateFIPS.forEach(function(s){
       sn.push(statename[s][0].statenameabbr);
    })
+   sn.sort(d3.ascending, function(a,b){return a-b});
     var content = "";
     content += "<span class='title'>DBA: </span><span class='title'>" + d.name + "</span></br>";
     content += "<span class='name'>Population Served: </span><span class='value'>" + popFormat(d.Pop_Served) + "</span></br>";
