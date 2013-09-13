@@ -14,7 +14,8 @@
 }
 
 .node.root text {
-  font: 20px sans-serif;
+  font: 13px sans-serif;
+  font-weight: bold;
 }
 
 
@@ -42,7 +43,7 @@ path.selected {
     fill: none;
     stroke-width: 4px;
 }
-.treeGraph {width:1060px;}
+.treeGraph {width:960px;}
 
 /* =============================================================================
    Tooltip

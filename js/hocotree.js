@@ -19,11 +19,11 @@ else{
 	stateParas=decodeURI(para[3]);;//state fips
 }
 
-var margin = {top: 20, right: 120, bottom: 20, left: 450},
-    width = parseInt(d3.select('#treeGraph').style('width')),
-    width = width - margin.right - margin.left,
-    mapRatio = 0.9
-    height = width*mapRatio - margin.top - margin.bottom;
+var margin = {top: 20, right: 0, bottom: 20, left: 0},
+    width = parseInt(d3.select('#treeGraph').style('width'));
+    //width = width - margin.right - margin.left,
+    //mapRatio = 0.9
+    //height = width*mapRatio - margin.top - margin.bottom;
     
 var i = 0,
     duration = 750,
@@ -109,8 +109,18 @@ function ready(error, hoco, state){
   height = treedata.numOfDBA < 5 ? 150 :
             treedata.numOfDBA < 10 ? 250 :
               treedata.numOfDBA < 15? 350 : 
-                treedata.numOfDBA < 20? 450: 500
-                 // treedata.numOfDBA < 25? 550: 650;
+                treedata.numOfDBA < 20? 450:
+                  treedata.numOfDBA < 25? 550:
+                    treedata.numOfDBA < 30? 650:
+                    treedata.numOfDBA < 35? 750:
+                    treedata.numOfDBA < 40? 850:
+                    treedata.numOfDBA < 45? 1050: 1250;
+  margin.left = treedata.name.length < 10 ? 60 :
+                  treedata.name.length < 25 ? 160 :
+                  treedata.name.length < 40 ? 260 :
+                  treedata.name.length < 45 ? 310 :
+                  treedata.name.length < 50 ? 350 :
+                  treedata.name.length < 55 ? 400 : 450;
   tree = d3.layout.tree()
     .size([height, width]);
 
@@ -157,7 +167,9 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+ // nodes.forEach(function(d) { d.y = d.depth * 180; });
+ nodes.forEach(function(d) {console.log(d);d.y = d.depth == 0 ? 20:
+                               d.depth ==1 ?  300 : 380 });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -178,7 +190,7 @@ function update(source) {
 
   nodeEnter.append("text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-      .attr("dy", ".35em")
+      .attr("dy", function(d) {return d.depth==1 && d.parent.children.length==1 ?  "1.5em" : ".35em"})
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6)
