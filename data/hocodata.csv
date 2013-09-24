@@ -17,11 +17,11 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130079,ABRY Partners,"Atlantic Broadband (Penn), LLC",Atlantic Broadband,42,399324
 130079,ABRY Partners,"RCN Telecom Services, Inc.",RCN and RCN Business Services,42,533474
 130079,ABRY Partners,"RCN Telecom Services of Illinois, Inc.",RCN and RCN Business Solutions,17,521013
-130079,ABRY Partners,"RCN Telecom Services of New York, LP",RCN/RCN Business Solutions,36,1059711
+130079,ABRY Partners,"RCN Telecom Services of New York, LP",RCN-RCN Business Solutions,36,1059711
 130079,ABRY Partners,"RCN Telecom Services of Philadelphia, Inc.",RCN and RCN Business Services,42,227408
 130079,ABRY Partners,"Starpower Commnications, LLC",RCN and RCN Business Solutions,24,197767
 130079,ABRY Partners,"STARPOWER COUMMUNICATIONS, LLC",RCN TELECOM SERVICES LLC,51,15396
-130079,ABRY Partners,Starpower/RCN,RCN and RCN Business Solutions,11,391066
+130079,ABRY Partners,Starpower-RCN,RCN and RCN Business Solutions,11,391066
 130005,"Absaraka Cooperative Telephone Co., Inc.","Absaraka Cooperative Telephone Co., Inc.","Absaraka Cooperative Telephone Co., Inc.",38,89
 901000,"Absolute Best Communications, LLC","Absolute Best Communications, LLC",Smith Valley Internet,32,1611
 901001,Acadiana Wireless,Acadiana Wireless,Acadiana Wireless,22,43718
@@ -113,7 +113,7 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 220005,"Allied Telecom Group, LLC","Allied Telecom Group, LLC","Allied Telecom Group, LLC",24,24439
 190504,Allo Communications,Allo Communications,Allo Communications,31,40673
 900046,Alltel Wireless,AWCC,Alltel,13,1145329
-210006,AllureTech/Coffeynet,AllureTech/CoffeyNet,AllureTech/CoffeyNet,56,72385
+210006,AllureTech-Coffeynet,AllureTech-CoffeyNet,AllureTech-CoffeyNet,56,72385
 130037,"All West Communications, Inc.",All West Communications,All West Communications,56,14882
 130037,"All West Communications, Inc.",All West Communications,"All West Communications, Inc.",49,22079
 130043,Alma Communications Company,Alma Communications Company,Alma Telephone Company,29,718
@@ -284,10 +284,10 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 900567,"Avolve, Inc.","Avolve, Inc.",Avolve,39,47508
 190037,"Awesomenet, Inc.","AwesomeNet, Inc.",AwesomeNet,48,397961
 140012,Axiom Technologies,"Axiom Technologies, LLC",Axiom Technologies,23,987461
-130086,Axxis Communications/Gorge Networks,Axxis Communications,Axxis Communications,41,30419
-130086,Axxis Communications/Gorge Networks,Axxis Communications,Axxis Communications,53,9238
-130086,Axxis Communications/Gorge Networks,Gorge Networks,Gorge Networks,41,35806
-130086,Axxis Communications/Gorge Networks,Gorge Networks,Gorge Networks,53,11980
+130086,Axxis Communications-Gorge Networks,Axxis Communications,Axxis Communications,41,30419
+130086,Axxis Communications-Gorge Networks,Axxis Communications,Axxis Communications,53,9238
+130086,Axxis Communications-Gorge Networks,Gorge Networks,Gorge Networks,41,35806
+130086,Axxis Communications-Gorge Networks,Gorge Networks,Gorge Networks,53,11980
 130087,Ayersville Telephone Company,Ayersville Telephone Company,Ayersville Telephone Company,39,2386
 130088,Ayrshire Farmers Mutual Telephone Company,Ayrshire Farmers Mutual Telephone Company,Ayrshire Communications,19,1377
 130088,Ayrshire Farmers Mutual Telephone Company,Ayrshire Farmers Mutual Telephone Company,Ayrshire Farmers Mutual Telephone Company,19,2036
@@ -359,7 +359,7 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130120,"Bernard Telephone Company, Inc.",Bernard Telephone,Bernard Telephone,19,36975
 900572,"Bertram Communications, LLC","Bertram Communications, LLC","Bertram Communications, LLC",55,836867
 900038,"Beulahland Communications, Inc.","Beulahland Communications, Inc.","Beulahland Communications, Inc.",08,156982
-130122,Biddeford Internet Corporation,Biddeford Internet Corporation,N/A,33,5006
+130122,Biddeford Internet Corporation,Biddeford Internet Corporation,N-A,33,5006
 130122,Biddeford Internet Corporation,GWI (Biddeford Internet Corporation),Biddeford Internet Corporation,23,679259
 901005,"Big Bay Broadband, Inc.","Big Bay Broadband, Inc.","Big Bay Broadband, Inc.",26,461
 130123,"Big Bend Telephone Co., Inc.","Big Bend Telephone Company, Inc.",Big Bend Telephone Company,48,30640
@@ -373,8 +373,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130130,Bixby Telephone Company,BTC Broadband,BTC Broadband,40,1156
 130132,"Blackfoot Telephone Cooperative, Inc.","Blackfoot Communications, Inc.","Blackfoot Telephone Cooperative, Inc.",30,19744
 130132,"Blackfoot Telephone Cooperative, Inc.","Blackfoot Telephone Cooperative, Inc.","Blackfoot Telephone Cooperative, Inc.",30,28014
-130133,Blanca Telephone Company/Jade Communications LLC,Blanca Telephone Company,Blanca Telephone Company,08,1897
-130133,Blanca Telephone Company/Jade Communications LLC,"Jade Communications, LLC","Jade Communications, LLC",08,40911
+130133,Blanca Telephone Company-Jade Communications LLC,Blanca Telephone Company,Blanca Telephone Company,08,1897
+130133,Blanca Telephone Company-Jade Communications LLC,"Jade Communications, LLC","Jade Communications, LLC",08,40911
 130134,"Blanchard Telephone Association, Inc.",Blanchard Telephone Company,Blanchard Telephone Company,26,4011
 130136,Bledsoe Telephone Cooperative Inc.,Bledsoe Telephone Cooperative,Bledsoe Telephone Cooperative,47,25635
 200006,"Blip Networks, LLC","BLIP Networks, LLC",BLIP Networks,17,42078
@@ -411,7 +411,7 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 900528,Borealis Broadband,Borealis Broadband Inc.,Borealis Broadband Inc.,02,151468
 900088,Borough of Kutztown,Borough of Kutztown,Hometown Utili-com,42,10561
 900906,Bowling Green Municipal Utilities,Bowling Green Municipal Utilities,BGMU,21,60831
-190059,"Boycom Cablevision, Inc./Partel Broadband Telecommunications, Inc.","Boycom Cablevision, Inc.","Boycom Cablevision, Inc.",29,11683
+190059,"Boycom Cablevision, Inc.-Partel Broadband Telecommunications, Inc.","Boycom Cablevision, Inc.","Boycom Cablevision, Inc.",29,11683
 130148,"BPM, Inc.ÿ",Noxapater Telephone Company,Noxapater Telephone Company,28,3284
 900474,"Bradco Wisp, Inc.","Bradco Wisp, Inc.","Bradco Wisp, Inc.",27,22543
 900469,Brainstorm Internet,Brainstorm Internet,Brainstorm Internet,08,145948
@@ -526,8 +526,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 250025,Capshaw Enterprises,"Capshaw Enterprises, LLC",Crossroads Wifi; Crossroads Tech,47,36669
 190074,"Cardinal Broadband, LLC","Cardinal Broadband, LLC","Cardinal Broadband, LLC",08,4945
 130201,Carnegie Telephone Company,Carnegie Telephone Company,Carnegie Telephone Company,40,2918
-130202,Carolina Mountain/Country Cablevision,Carolina Mountain Cablevision,Carolina Mountain Cablevision,37,10021
-130202,Carolina Mountain/Country Cablevision,Country Cablevision,Country Cablevision,37,21551
+130202,Carolina Mountain-Country Cablevision,Carolina Mountain Cablevision,Carolina Mountain Cablevision,37,10021
+130202,Carolina Mountain-Country Cablevision,Country Cablevision,Country Cablevision,37,21551
 130203,"Carr Communications, Inc.","Carr Communications, Inc.",Carr Telephone Company,26,2078
 900378,Carthage Water & Electric,Carthage Water & Electric,Carthage Water & Electric,29,23826
 900755,Casa Grande Internet,Casa Grande Internet,Casa Grande Internet,04,112359
@@ -567,7 +567,7 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130223,"Center Junction Telephone Company, Inc.",Center Junction Telephone Company,Center Junction Telephone Company,19,354
 130224,"Central Arkansas Telephone Cooperative, Inc.","Central Arkansas Telephone Cooperative, Inc.","Central Arkansas Telephone Cooperative, Inc.",05,7746
 902013,Central Iowa Broadband,Central Iowa Broadband,Central Iowa Broadband,19,641
-130226,Central Oklahoma Telephone Co.,"Central Cellular, Inc.",Central Cellular LLC/COTC Connections,40,9376
+130226,Central Oklahoma Telephone Co.,"Central Cellular, Inc.",Central Cellular LLC-COTC Connections,40,9376
 130226,Central Oklahoma Telephone Co.,Central Oklahoma Telephone Co. LLC,Central Oklahoma Telephone Co. LLC,40,8360
 900020,"Central Telecom Services, LLC.",CentraCom,CentraCom,49,61941
 130227,"Central Texas Telephone Cooperative, Inc.","Central Texas Cable Partners, Inc.",Reveille Broadband,48,3893
@@ -871,9 +871,9 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130317,Comcast Corporation,Comcast of Arizona,Comcast,04,4058
 130317,Comcast Corporation,Comcast of Arizona Inc,Comcast,04,326349
 130317,Comcast Corporation,"Comcast of California Idaho, Inc.",Comcast,16,851
-130317,Comcast Corporation,"Comcast of Connecticut/Georgia/Massachusetts/New Hampshire/New York/North Carolina/Virginia/Vermont, LLC",Comcast,37,5110
-130317,Comcast Corporation,"Comcast of Maine/New Hampshire, Inc",Comcast,23,87380
-130317,Comcast Corporation,"Comcast of Maine/New Hampshire, Inc.",Comcast,23,6651
+130317,Comcast Corporation,"Comcast of Connecticut-Georgia-Massachusetts-New Hampshire-New York-North Carolina-Virginia-Vermont, LLC",Comcast,37,5110
+130317,Comcast Corporation,"Comcast of Maine-New Hampshire, Inc",Comcast,23,87380
+130317,Comcast Corporation,"Comcast of Maine-New Hampshire, Inc.",Comcast,23,6651
 130317,Comcast Corporation,"Comcast of New York, LLC",Comcast,36,109695
 130317,Comcast Corporation,"Comcast of the District, LLC",Comcast,11,606270
 900401,Communication  Construction Services,Communication Construction Services,American Warrior Network,22,8435
@@ -984,13 +984,13 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130369,Crown Point Telephone Corporation,Crown Point Telephone Corporation,Crown Point Telephone Corporation,36,1986
 900109,CRU Enterprises,CRU Enterprises,CRU Enterprises,47,15467
 230010,"Crystal Automation Systems, Inc.",Crystal Automation Systems,"Casair, Inc.",26,394784
-130370,"CSC Holdings, LLC","Cablevision Lightpath, Inc.",Cablevision/Lightpath,36,385712
+130370,"CSC Holdings, LLC","Cablevision Lightpath, Inc.",Cablevision-Lightpath,36,385712
 130370,"CSC Holdings, LLC",CSC Holdings Inc,Cablevision,09,3476
 130370,"CSC Holdings, LLC","CSC Holdings, Inc",Bresnan Communications,30,634414
 130370,"CSC Holdings, LLC","CSC Holdings, Inc",Cablevision,09,850453
 130370,"CSC Holdings, LLC","CSC Holdings, Inc",Lightpath,09,38435
 130370,"CSC Holdings, LLC","CSC Holdings, Inc.",Bresnan Communications,56,360078
-130370,"CSC Holdings, LLC","CSC Holdings, Inc.",Cablevision/Optimum,36,8556123
+130370,"CSC Holdings, LLC","CSC Holdings, Inc.",Cablevision-Optimum,36,8556123
 130370,"CSC Holdings, LLC",CSC HOLDINGS INC,CABLEVISION,34,4137397
 130370,"CSC Holdings, LLC",CSC HOLDINGS INC,LIGHTPATH,34,163813
 130370,"CSC Holdings, LLC","CSC HOLDINGS, INC",BRESNAN COMMUNICATIONS,49,32193
@@ -1148,8 +1148,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130453,Emery Telcom,Emery Telephone,Emery Telephone,49,195
 130453,Emery Telcom,Hanksville Telcom Inc.,Hanksville Telcom Inc.,49,249
 130454,Emily Cooperative Telephone Company,Emily Cooperative Telephone Company,Emily Cooperative Telephone Company,27,1824
-130455,Empire Telephone Corporation/North Penn Telephone Company,Empire Telephone Corp.,Empire Telephone Corp.,36,15534
-130455,Empire Telephone Corporation/North Penn Telephone Company,North Penn,North Penn,42,11941
+130455,Empire Telephone Corporation-North Penn Telephone Company,Empire Telephone Corp.,Empire Telephone Corp.,36,15534
+130455,Empire Telephone Corporation-North Penn Telephone Company,North Penn,North Penn,42,11941
 900581,Encore Business Systems Inc,Encore Business Systems Inc.,California Broadband Services,06,896875
 900607,"Endless Journey, Inc.","Endless Journey, Inc.",Endless Journey Internet,26,20727
 900320,"Enet Internet Services, LLC","Enet Internet Services, LLC",Enet Internet,48,69541
@@ -1918,11 +1918,11 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 160127,LICT Corporation,Cal-Ore Communications Inc.,Cal-Ore Communications Inc.,41,41527
 160127,LICT Corporation,"Cal-Ore Communications, Inc.","Cal-Ore Communications, Inc.",06,18585
 160127,LICT Corporation,Cal-Ore Telephone Co.,Cal-Ore Telephone Co.,06,3925
-160127,LICT Corporation,Cassadaga Telephone Corporation,DFT Communications/Netsync,36,3282
+160127,LICT Corporation,Cassadaga Telephone Corporation,DFT Communications-Netsync,36,3282
 160127,LICT Corporation,Central Scott Telephone Company,Central Scott Telephone Company,19,13377
 160127,LICT Corporation,Central Scott Telephone Company,CS Technologies,19,93909
-160127,LICT Corporation,DFT Local Service Corporation,DFT Communications/Netsync,36,48497
-160127,LICT Corporation,Dunkirk and Fredonia Telephone Company,DFT Communications/Netsync,36,16863
+160127,LICT Corporation,DFT Local Service Corporation,DFT Communications-Netsync,36,48497
+160127,LICT Corporation,Dunkirk and Fredonia Telephone Company,DFT Communications-Netsync,36,16863
 160127,LICT Corporation,"Giant Communications, Inc.",Giant Communications,20,115724
 160127,LICT Corporation,"Haviland Telephone Company, Inc.","Haviland Telephone Company, Inc.",20,9213
 160127,LICT Corporation,"JBN Telephone Company, Inc.","JBN Telephone Company, Inc.",20,5058
@@ -2144,8 +2144,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 240109,Montana Internet,Montana Internet Corporation,Montana Internet Corporation,30,155425
 900190,Montana Sky Networks,Montana Sky Networks,Montana Sky Networks,30,37558
 270063,MontanaSky West LLC,Montana Sky West,Montana Sky West,30,8593
-130856,Moore & Liberty Telephone Company/Griggs County Telephone,Griggs County Telephone Company,Griggs County Telephone Company,38,4060
-130856,Moore & Liberty Telephone Company/Griggs County Telephone,"MLGC, LLC","MLGC, LLC",38,1713
+130856,Moore & Liberty Telephone Company-Griggs County Telephone,Griggs County Telephone Company,Griggs County Telephone Company,38,4060
+130856,Moore & Liberty Telephone Company-Griggs County Telephone,"MLGC, LLC","MLGC, LLC",38,1713
 902043,Moose Lake Water & Light Commission,Moose Lake Water & Light Commission,Moose-Tec,27,15890
 200029,Morris Broadband LLC,Morris Broadband,Morris Broadband LLC,37,161529
 900191,Morristown Utility Systems,Morristown Utility Systems,Morristown Utility FiberNET,47,39850
@@ -2224,9 +2224,9 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 900492,"New Era Broadband, LLC","New Era Broadband, LLC","New Era Broadband, LLC",39,8920
 130902,"New Hope Telephone Cooperative, Inc. (AL)",New Hope Telephone Cooperative,New Hope Telephone Cooperative,01,14722
 130901,New Hope Telephone Cooperative (VA),New Hope Telephone Cooperative,New Hope Telephone Cooperative,51,26373
-130903,"New Knoxville Telephone Company/GoldStar Communications, LLC",GoldStar Communications,Gold Radio Group,39,420122
-130903,"New Knoxville Telephone Company/GoldStar Communications, LLC",New Knoxville Telephone Company,New Knoxville Telephone Company,39,3701
-130903,"New Knoxville Telephone Company/GoldStar Communications, LLC",NKTelco Inc.,NKTelco Inc.,39,36062
+130903,"New Knoxville Telephone Company-GoldStar Communications, LLC",GoldStar Communications,Gold Radio Group,39,420122
+130903,"New Knoxville Telephone Company-GoldStar Communications, LLC",New Knoxville Telephone Company,New Knoxville Telephone Company,39,3701
+130903,"New Knoxville Telephone Company-GoldStar Communications, LLC",NKTelco Inc.,NKTelco Inc.,39,36062
 130904,"New Lisbon Telephone Company, Inc.",New Lisbon Telephone Company,New Lisbon Telephone Company,18,9771
 130904,"New Lisbon Telephone Company, Inc.",New LisbonTelephone Company,New LisbonTelephone Company,18,2725
 170071,"Newmax, LLC",Intermax Networks,Intermax Networks,16,171116
@@ -2255,9 +2255,9 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 900203,Nexus Systems,Nexus Systems,Nexus Systems,05,13657
 900787,Nez Perce Tribe,Nez Perce Tribe,Nez Perce Tribe,16,1773
 270064,"NGL Connection, LLC",NGL Connection,NGL Connection,56,17205
-130919,Niagara Telephone Company/Wittenberg Telephone Company,Niagara Telephone Company,"Borderland Communications, LLC",26,3122
-130919,Niagara Telephone Company/Wittenberg Telephone Company,Niagara Telephone Company,Niagara Telephone Company,55,3675
-130919,Niagara Telephone Company/Wittenberg Telephone Company,Wittenberg Telephone Company,Wittenberg Telephone Company,55,4681
+130919,Niagara Telephone Company-Wittenberg Telephone Company,Niagara Telephone Company,"Borderland Communications, LLC",26,3122
+130919,Niagara Telephone Company-Wittenberg Telephone Company,Niagara Telephone Company,Niagara Telephone Company,55,3675
+130919,Niagara Telephone Company-Wittenberg Telephone Company,Wittenberg Telephone Company,Wittenberg Telephone Company,55,4681
 900951,"Niagara Wireless, LLC","Niagara Wireless, LLC",Cirrinity,55,10037
 130920,"Nicholville Telephone Company, Inc.","Nicholville Telephone Company, Inc.",Nicholville Telephone,36,4717
 130920,"Nicholville Telephone Company, Inc.","Slic Network Solutions, Inc.",Slic Network Solutions,36,15468
@@ -2448,10 +2448,10 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 131029,"Peoples Rural Telephone Cooperative Corporation, Inc.","Peoples Rural Telephone Coop. Corp., Inc.",PRTC,21,17393
 902019,Peoples State Bank,Peoples State Bank,PeoplesNet Wireless,17,8521
 131030,"Peoples Telecommunications, LLC","Peoples Telecommunications, LLC","Peoples Telecommunications, LLC",20,3570
-131031,"Peoples Telephone Cooperative, Inc./Peoples FiberCom",FEC Communications,Connextions Telcom,48,52911
-131031,"Peoples Telephone Cooperative, Inc./Peoples FiberCom",People's Telephone Company,People's Telephone Company,41,3159
-131031,"Peoples Telephone Cooperative, Inc./Peoples FiberCom","Peoples Telephone Cooperative, Inc.","Peoples Telephone Cooperative, Inc.",48,30690
-131031,"Peoples Telephone Cooperative, Inc./Peoples FiberCom","Peoples Telephone Cooperative, Inc.",Peoples Wireless,48,57384
+131031,"Peoples Telephone Cooperative, Inc.-Peoples FiberCom",FEC Communications,Connextions Telcom,48,52911
+131031,"Peoples Telephone Cooperative, Inc.-Peoples FiberCom",People's Telephone Company,People's Telephone Company,41,3159
+131031,"Peoples Telephone Cooperative, Inc.-Peoples FiberCom","Peoples Telephone Cooperative, Inc.","Peoples Telephone Cooperative, Inc.",48,30690
+131031,"Peoples Telephone Cooperative, Inc.-Peoples FiberCom","Peoples Telephone Cooperative, Inc.",Peoples Wireless,48,57384
 901067,Performance PC,Performance PC,Performance PC,18,44082
 131032,"Perry-Spencer Rural Telephone Cooperative, Inc.","Perry-Spencer Communications, Inc.",PSC,18,79800
 131032,"Perry-Spencer Rural Telephone Cooperative, Inc.","Perry-Spencer Rural Telephone Cooperative, Inc.",PSC,18,2641
@@ -2526,7 +2526,7 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130418,"Platinum Equity, LLC",MegaPath Corporation,MegaPath Corporation,53,3774719
 130418,"Platinum Equity, LLC",MegaPath Corporation,MegaPath Corporation,55,1315040
 130418,"Platinum Equity, LLC",MegaPath Corporation,"Megapath, Inc.",23,14650
-130418,"Platinum Equity, LLC",MegaPath Corporation,N/A,33,491918
+130418,"Platinum Equity, LLC",MegaPath Corporation,N-A,33,491918
 130418,"Platinum Equity, LLC",MegaPath Holding Corporation,MegaPath Corporation,29,2311187
 160141,Plumas-Sierra Rural Electric Cooperative,GotSky Unlimited,Plumas-Sierra Wireless,06,7716
 901068,"PNC, Inc.","PNC, Inc.",Valley Internet,06,362744
@@ -3442,9 +3442,9 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 130797,"TrioTel Communications, Inc.","TrioTel Communications, Inc.","TrioTel Communications, Inc.",46,5388
 901092,TriState,TriState,"Tri State Internet, LLC",28,127787
 190380,"Troy Cablevision, Inc.","Troy Cablevision, Inc.","Troy Cablevision, Inc.",01,98268
-131378,"Trumansburg Telephone Co., Inc./Ontario Telephone Co., Inc.",Finger Lakes Technologies Group,Finger Lakes Technologies Group,36,253098
-131378,"Trumansburg Telephone Co., Inc./Ontario Telephone Co., Inc.",Ontario Telephone Company Inc.,Ontario Telephone Company,36,9652
-131378,"Trumansburg Telephone Co., Inc./Ontario Telephone Co., Inc.","Trumansburg Telephone Company, Inc.",Trumansburg Telephone,36,16909
+131378,"Trumansburg Telephone Co., Inc.-Ontario Telephone Co., Inc.",Finger Lakes Technologies Group,Finger Lakes Technologies Group,36,253098
+131378,"Trumansburg Telephone Co., Inc.-Ontario Telephone Co., Inc.",Ontario Telephone Company Inc.,Ontario Telephone Company,36,9652
+131378,"Trumansburg Telephone Co., Inc.-Ontario Telephone Co., Inc.","Trumansburg Telephone Company, Inc.",Trumansburg Telephone,36,16909
 131379,"Trustees of the City of Muscatine, Iowa",Muscatine Power and Water,MachLink,19,28575
 131379,"Trustees of the City of Muscatine, Iowa",Muscatine Power & Water,MachLink,19,31819
 131314,TSC Acquisition Corporation,Telscape Communications,Telscape Communications,06,2606467
@@ -3552,8 +3552,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 170089,Vector Data Systems LLC,Vector Data Systems LLC,Vector Data Systems LLC,24,388276
 900969,Velocity Broadband Internet Inc,Velocity Broadband Internet Inc,Velocity Broadband Internet Inc,05,10057
 902003,"Velocity Communications, Inc.","Velocity Communications, Inc.","Velocity Communications, Inc.",06,7101
-131422,"Venture Communications Cooperative, Inc./Western Telephone Company",Venture Communications Coop.,Venture Communications Coop.,46,22956
-131422,"Venture Communications Cooperative, Inc./Western Telephone Company",Western Telephone Company,Venture Communications Coop.,46,1901
+131422,"Venture Communications Cooperative, Inc.-Western Telephone Company",Venture Communications Coop.,Venture Communications Coop.,46,22956
+131422,"Venture Communications Cooperative, Inc.-Western Telephone Company",Western Telephone Company,Venture Communications Coop.,46,1901
 131423,Venus Telephone Corporation,Venus Telephone Corp.,Venus Telephone Corporation,42,3570
 230052,Veracity Networks,Veracity Networks,Veracity Networks,49,262316
 260059,Vergennes Broadband LLC,Vergennes Broadband LLC,Vergennes Broadband LLC,26,14205
@@ -3594,8 +3594,8 @@ HoCoNum,HoCoName,ProvName,DBAName,StateFIPS,Pop_Served
 131425,Verizon Communications Inc.,Cellco Partnership and its Affiliated Entities,Verizon Wireless,53,6699651
 131425,Verizon Communications Inc.,Cellco Partnership And Its Affiliated Entities,Verizon Wireless,12,19142632
 131425,Verizon Communications Inc.,CELLCO PARTNERSHIP AND ITS AFFILIATED ENTITIES,VERIZON WIRELESS,51,7920086
-131425,Verizon Communications Inc.,Cellco Partnership and its Affiliated Entities (d/b/a Verizon Wireless),Verizon Wireless,18,6410677
-131425,Verizon Communications Inc.,Cellco Partnership and its Affiliated Entities (d/b/a Verizon Wireless),Verizon Wireless,33,1252283
+131425,Verizon Communications Inc.,Cellco Partnership and its Affiliated Entities (d-b-a Verizon Wireless),Verizon Wireless,18,6410677
+131425,Verizon Communications Inc.,Cellco Partnership and its Affiliated Entities (d-b-a Verizon Wireless),Verizon Wireless,33,1252283
 131425,Verizon Communications Inc.,Verizon,Verizon,18,872721
 131425,Verizon Communications Inc.,"Verizon California, Inc.","Verizon California, Inc.",06,8352891
 131425,Verizon Communications Inc.,Verizon Communications Inc,Verizon Maryland Inc.,24,5470012

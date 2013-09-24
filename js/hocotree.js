@@ -88,7 +88,7 @@ function ready(error, hoco, state){
              })
 			.entries(hocodata);
 
-	treedata.name = hocoParas;
+	treedata.name = hocodata[0].HoCoName;
 	treedata.children = [];
   treedata.numOfDBA = 0;
 	hocoKey.forEach(function(d){
